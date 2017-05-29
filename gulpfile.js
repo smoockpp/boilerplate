@@ -76,7 +76,7 @@ gulp.task('watchFiles', function() {
 
 
 gulp.task('clean', function() {
-  del(['dist', 'src/styles/application.css*', 'src/scripts/app.*.js*']);
+  del(['src/styles/application.css*', 'src/scripts/app.*.js*']);
 });
 
 gulp.task('build', ['compileSass', 'minifyCSS', 'concatScripts', 'minifyScripts'], function() {
